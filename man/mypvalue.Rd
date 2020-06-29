@@ -2,7 +2,7 @@
 % Please edit documentation in R/mypvalue.R
 \name{mypvalue}
 \alias{mypvalue}
-\title{FUNCTION for P-values}
+\title{mypvalue}
 \usage{
 mypvalue(t0, xmax = 4, n = 20, alpha = 0.05)
 }
@@ -19,8 +19,9 @@ mypvalue(t0, xmax = 4, n = 20, alpha = 0.05)
 
 }
 \description{
-Display P-value areas
+FUNCTION for P-values: Display P-value areas
 }
 \examples{
-mypvalue()
+set.seed(55);x1=rnorm(30,mean=25,sd=5)
+mypvalue((mean(x1)-24)/(sd(x1)/sqrt(30)),n=30,alpha=0.05)
 }

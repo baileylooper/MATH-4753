@@ -1,6 +1,6 @@
-#' @title FUNCTION for P-values
+#' @title mypvalue
 #'
-#' @description Display P-value areas
+#' @description FUNCTION for P-values: Display P-value areas
 #'
 #' @param t0 this is tcalc for the data set
 #' @param xmax the maximum x value for the plot
@@ -11,7 +11,8 @@
 #' @export
 #'
 #' @examples
-#' mypvalue()
+#' set.seed(55);x1=rnorm(30,mean=25,sd=5)
+#' mypvalue((mean(x1)-24)/(sd(x1)/sqrt(30)),n=30,alpha=0.05)
 mypvalue=function(t0,xmax=4,n=20, alpha=0.05){
   #calculate alpha/2
   va=round(pt(-t0,df=n-1),4)

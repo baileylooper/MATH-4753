@@ -17,7 +17,7 @@ myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 
 \item{cx}{character expansion factor}
 
-\item{...}{}
+\item{...}{any other specifications for the confidence interval}
 }
 \value{
 Histogram of bootstrap sample statistics

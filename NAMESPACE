@@ -2,4 +2,5 @@
 
 export(findmode)
 export(myboot2)
+export(mycltp)
 export(mypvalue)
